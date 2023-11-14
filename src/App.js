@@ -13,9 +13,9 @@ function App() {
           <Header/>
           <NavigationBar/>
           <Routes>
-            <Route path="/software" element={<Film></Film>}></Route>
+            <Route path="/film" element={<Film></Film>}></Route>
             <Route path="/" element={<Home></Home>}></Route>
-            <Route path="/film" element={<Software></Software>}></Route>
+            <Route path="/software" element={<Software></Software>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
