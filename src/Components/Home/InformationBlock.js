@@ -4,7 +4,7 @@ const InformationBlock = (title, imageSrc, url, textBlock1, textBlock2) => {
             <p className="font-semibold pb-12 my-11 mx-11 min-w-fit">
                 <div className="flex flex-col">
                     {title} 
-                    <a className="mx-2 italic text-blue-400" href="https://vitalizecare.co/">{url}</a>
+                    <a className="mx-2 italic text-blue-400" href={url}>visit organization page</a>
                 </div>
             </p>
             <img className="mh-1/8" src={imageSrc} alt="company visual"/>
