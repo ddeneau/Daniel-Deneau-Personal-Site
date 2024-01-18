@@ -8,10 +8,10 @@ const Introduction = () => {
                     <img src={photo} alt="Me at D23 2022, a Disney Fan Expo in California." className="border-black border-3 rounded-4xl"/>
                 </div>
                 <div className="flex flex-col w-full">
-                    <div className='text-4xl font-semibold align-middle my-11 mx-11 w-fit'>
+                    <div className='text-3xl font-semibold align-middle mt-6 mb-3 mx-11 w-fit'>
                         Thanks for stopping by!
                     </div>
-                    <div className='text-4xl align-middle my-11 mx-11 min-w-fit leading-relaxed'>
+                    <div className='text-lg align-middle my-6 mx-11 min-w-fit leading-relaxed'>
                         <p>This is where you can find out a little bit more about my projects, background, and interests.</p>
                     </div>
                 </div>
