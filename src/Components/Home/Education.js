@@ -2,7 +2,7 @@ import photo from './Images/logo.png'
 
 const Education = () => {
     return (
-        <div className="flex rounded-2xl bg-white h-fit w-full my-6 mt-6 mx-12 flex-col">
+        <div className="flex rounded-2xl bg-white h-fit w-full my-6 mx-12 flex-col">
             <div className="flex flex-col w-full">
                 <div className='text-4xl font-semibold align-middle mt-6 mx-11 w-fit'>
                     Education

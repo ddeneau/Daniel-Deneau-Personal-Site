@@ -6,9 +6,11 @@ import Education from "../Components/Home/Education"
 const Home = () => {
     return(
         <div>
-            <div className="lg:flex lg:flex-row rounded-3xl mt-1 mb-1 mx-8 bg-red-400 border-4 border-orange-600 sm:flex sm:flex-col">
+            <div className="flex flex-col justify-items-center rounded-3xl mt-1 mb-1 mx-8 bg-red-400 border-4 border-orange-600 
+                            lg:flex lg:flex-row
+                                ">
                 
-                <div className="flex flex-col w-2/5">
+                <div className="lg:w-2/5 sm:w-full">
                     <div className="flex w-full">{Introduction()}</div>
                     <div className="flex w-full"> {Education()} </div>
                 </div>
