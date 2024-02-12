@@ -10,7 +10,7 @@ function App() {
   return (
       <div>
         <BrowserRouter>
-          <div className="flex flex-row justify-center">
+          <div className="flex flex-col justify-center">
             <Header/>
             <NavigationBar/>
           </div>
