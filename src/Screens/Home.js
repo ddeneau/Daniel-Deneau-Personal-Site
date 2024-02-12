@@ -16,7 +16,7 @@ const Home = () => {
                 </div>
                 
 
-                <div className="flex w-3/5 sm:w-full sm:justify-center">{Information()}</div>
+                <div className="flex w-3/5 sm:w-fit sm:justify-center">{Information()}</div>
 
             </div>
             <p className="flex justify-center ">Daniel Deneau, 2023</p>       
