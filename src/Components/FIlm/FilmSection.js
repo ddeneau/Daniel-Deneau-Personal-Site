@@ -43,7 +43,7 @@ const FilmSection = () => {
       <div className="md:flex md:gap-8">
         {/* Past Projects */}
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-2xl font-bold m-6">Past Projects</h2>
+          <h2 className="text-2xl font-bold m-6 bg-white rounded-2xl text-center">Past Projects</h2>
           {projects.past.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
@@ -51,7 +51,7 @@ const FilmSection = () => {
 
         {/* Projects in Development */}
         <div className="md:w-1/2">
-          <h2 className="text-2xl m-6 font-bold">Projects in Development</h2>
+        <h2 className="text-2xl font-bold m-6 bg-white rounded-2xl text-center">In Development</h2>
           {projects.development.map((project, index) => (
             <ProjectCard2 key={index} {...project} />
           ))}
