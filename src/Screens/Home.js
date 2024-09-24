@@ -1,6 +1,6 @@
 import Introduction from "../Components/Home/Introduction"
-import Information from "../Components/Home/Information"
 import Education from "../Components/Home/Education"
+import Current from "../Components/Home/Current"
 
 /* Landing/Home page with general information. */
 const Home = () => {
@@ -10,16 +10,16 @@ const Home = () => {
                             lg:flex lg:flex-row
                                 ">
                 
-                <div className="lg:w-2/5 sm:w-full">
+                <div className="lg:w-3/5 sm:w-full">
                     <div className="flex w-full">{Introduction()}</div>
                     <div className="flex w-full"> {Education()} </div>
                 </div>
                 
 
-                <div className="flex w-3/5 sm:w-fit sm:justify-center">{Information()}</div>
+                <div className="flex w-2/5 sm:w-fit sm:justify-center">{Current()}</div>
 
             </div>
-            <p className="flex justify-center ">Daniel Deneau, 2023</p>       
+            <p className="flex justify-center ">Daniel Deneau, 2024</p>       
         </div> 
     )
 }
