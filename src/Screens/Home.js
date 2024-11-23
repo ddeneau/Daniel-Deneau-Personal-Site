@@ -6,11 +6,11 @@ import Current from "../Components/Home/Current"
 const Home = () => {
     return(
         <div>
-            <div className="flex flex-col justify-items-center rounded-3xl m-8 bg-gray-600 border-4 border-orange-600 
-                            lg:flex lg:flex-row
+            <div className="flex sm:flex-col justify-items-center rounded-3xl m-8 bg-gray-600 border-4 border-orange-600 
+                            lg:flex-row
                                 ">
                 
-                <div className="m-8 lg:w-1/2 h-fit sm:w-full">
+                <div className="flex flex-col lg:m-8 sm:m-8 lg:w-1/2 h-fit sm:w-fit sm:justify-center">
                     <div className="flex w-fit h-1/2">{Introduction()}</div>
                     <div className="flex w-fit h-1/2"> {Education()} </div>
                 </div>

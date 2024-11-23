@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import ProjectCard2 from './ProjectCard2';
+import InProgressProject from './InProgressProject';
 import image_dimensions from '../Home/Images/dimensions.png'
 import image_hjsn from '../Home/Images/hjsn.png'
 import image_hjsn2 from '../Home/Images/hjsn2.png'
@@ -14,7 +14,7 @@ const FilmSection = () => {
         title: 'Hot Jazz Saturday Night',
         description: 'documentary, music, art, short',
         images: [image_hjsn, image_hjsn2],
-        youtubeLink: 'https://filmfreeway.com/projects/2721151',
+        role: 'Writer, Director, Producer, Editor'
       },
 
       {
@@ -22,6 +22,8 @@ const FilmSection = () => {
         description: 'drama, short',
         images: ['/img1.jpg', '/img2.jpg'],
         youtubeLink: 'https://filmfreeway.com/projects/2721151',
+        role: 'Writer, Director, Producer, Editor, Actor'
+        
       },
       // Add more past projects here
     ],
@@ -31,6 +33,7 @@ const FilmSection = () => {
             description: 'sci-fi, comedy, vfx, feature length',
             images: [image_dimensions],
             youtubeLink: 'https://youtube.com/devlink',
+            role: 'Director, Producer, Editor'
           },
 
 
@@ -53,7 +56,7 @@ const FilmSection = () => {
         <div className="md:w-1/2">
         <h2 className="text-2xl font-bold m-6 bg-white rounded-2xl text-center">In Development</h2>
           {projects.development.map((project, index) => (
-            <ProjectCard2 key={index} {...project} />
+            <InProgressProject key={index} {...project} />
           ))}
         </div>
       </div>
