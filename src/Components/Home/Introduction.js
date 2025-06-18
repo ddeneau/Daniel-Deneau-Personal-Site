@@ -1,11 +1,11 @@
-import photo from './Images/Zootopia.png'
+import photo from './Images/headshot.png'
 
 /* The "About Me" part of the homepage with a photo and opening description statement*/
 const Introduction = () => {
     return (
             <div className="flex rounded-2xl bg-white h-fit w-full my-2 mx-12 flex-col">
                 <div className="m-4 my-4 flex flex-row justify-center">
-                    <img src={photo} alt="Me at D23 2022, a Disney Fan Expo in California." className=" w-1/4 h-1/4 rounded-full"/>
+                <img src={photo} alt="Me at D23 2022, a Disney Fan Expo in California." className="rounded-full max-w-xs max-h-xs w-full h-auto"/>
                 </div>
                 <div className="flex flex-col w-full">
                     <div className='text-3xl font-semibold align-middle mt-6 mb-3 mx-11 w-fit'>

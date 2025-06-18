@@ -11,12 +11,12 @@ const Home = () => {
                                 ">
                 
                 <div className="flex flex-col lg:m-8 sm:m-8 lg:w-1/2 h-fit sm:w-fit sm:justify-center">
-                    <div className="flex w-fit h-1/2">{Introduction()}</div>
-                    <div className="flex w-fit h-1/2"> {Education()} </div>
+                    <div className="flex ">{Introduction()}</div>
+                    <div className="flex "> {Education()} </div>
                 </div>
                 
 
-                <div className="flex w-1/2 h-1/2 sm:w-fit sm:justify-center m-8">{Current()}</div>
+                <div className="flex lg:m-8 sm:m-8 lg:w-1/2 h-fit w-1/2 sm:w-fit sm:justify-center">{Current()}</div>
 
             </div>
             <p className="flex justify-center ">Daniel Deneau, 2024</p>       
