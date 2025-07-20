@@ -1,19 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-
 const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => {
-  const navigate = useNavigate();
-
-  const handleCardClick = () => {
-    if (url) {
-      navigate(url);
-    }
-  };
 
   return (
     <div
       className="rounded-2xl bg-white mt-6 mx-5 p-6 cursor-pointer"
-      onClick={handleCardClick}
     >
       <div className="flex">
         <h3 className="text-xl font-bold mb-2 mr-2">Title:</h3>
