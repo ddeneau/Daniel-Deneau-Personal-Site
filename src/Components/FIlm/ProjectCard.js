@@ -1,8 +1,23 @@
-const ProjectCard = ({ title, description, images, youtubeLink, role }) => (
-    <div className="rounded-2xl bg-white mt-6 mx-5 p-6">
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    if (url) {
+      navigate(url);
+    }
+  };
+
+  return (
+    <div
+      className="rounded-2xl bg-white mt-6 mx-5 p-6 cursor-pointer"
+      onClick={handleCardClick}
+    >
       <div className="flex">
-      <h3 className="text-xl font-bold mb-2 mr-2">Title:</h3>
-      <p className="text-xl text-slate-900 font-medium mb-2">{title}</p>
+        <h3 className="text-xl font-bold mb-2 mr-2">Title:</h3>
+        <p className="text-xl text-slate-900 font-medium mb-2">{title}</p>
       </div>
 
       <div className="flex">
@@ -15,21 +30,27 @@ const ProjectCard = ({ title, description, images, youtubeLink, role }) => (
       </div>
 
       <div className="flex gap-2">
-
         {images.map((src, index) => (
           <img key={index} src={src} alt={`Project ${index + 1}`} className="w-1/3 rounded-lg" />
         ))}
       </div>
 
-      <div className="flex mt-4 justify-center">
-        <a href={youtubeLink} target="_blank" rel="noopener noreferrer" className="text-large text-blue-500 hover:underline">Watch</a>
+      <div className="flex gap-4">
+        {youtubeLink ? (
+          <a href={youtubeLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+            Watch on YouTube
+          </a>
+        ) : (
+          <p>Link Coming Soon</p>
+        )}
       </div>
-
+      
       <div className="flex">
         <h3 className="text-xl font-bold mr-2">Role:</h3>
         <p className="text-xl text-slate-900 font-medium mb-2">{role}</p>
       </div>
     </div>
   );
-  
-  export default ProjectCard
+};
+
+export default ProjectCard;
