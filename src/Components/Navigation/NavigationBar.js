@@ -10,7 +10,7 @@ const NavigationBar = () => {
             <div className="flex flex-row w-1/3 sm:">
                 <div className="w-1/3 sm:">{NavigationBlock("Software", "/Software", atomIcon)}</div> 
                 <div className="w-1/3 sm:">{NavigationBlock("Main ", "/", houseIcon)}</div>
-                <div className="w-1/3 sm:">{NavigationBlock("Film", "/Film", movieIcon)}</div>
+                <div className="w-1/3 sm:">{NavigationBlock("Media", "/Film", movieIcon)}</div>
             </div>
         </div>
     )

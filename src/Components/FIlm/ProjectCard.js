@@ -16,13 +16,13 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
       </div>
 
       <div className="flex">
-        <h3 className="text-xl font-bold mr-2">Images:</h3>
+        {images ? (<h3 className="text-xl font-bold mr-2">Images:</h3>) : (<h3></h3>)}
       </div>
 
       <div className="flex gap-2">
-        {images.map((src, index) => (
+        {images ? (images.map((src, index) => (
           <img key={index} src={src} alt={`Project ${index + 1}`} className="w-1/3 rounded-lg" />
-        ))}
+        ))) : (<p>No Images Yet...</p>)}
       </div>
 
       <div className="flex gap-4">

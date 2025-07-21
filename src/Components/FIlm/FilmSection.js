@@ -1,12 +1,12 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import image_dimensions from '../Home/Images/dimensions.png'
-import image_hjsn from '../Home/Images/hjsn.png'
-import image_hjsn2 from '../Home/Images/hjsn2.png'
+import image_dimensions from '../Home/Images/dimensions.png';
+import image_hjsn from '../Home/Images/hjsn.png';
+import image_hjsn2 from '../Home/Images/hjsn2.png';
 import image_ss1 from '../Home/Images/ss1.png';
 import image_ss2 from '../Home/Images/ss2.png';
-
-
+import image_knights1 from '../Home/Images/knights1.png';
+import image_knights2 from '../Home/Images/knights2.png';
 
 const FilmSection = () => {
   // Dummy data for projects
@@ -34,16 +34,14 @@ const FilmSection = () => {
       {
         title: 'Knights',
         description: 'action, drama, horror',
-        images: ['/img1.jpg', '/img2.jpg'],
+        images: [image_knights1, image_knights2],
         role: 'Guest Role'
-        
       },
-        {
-            title: 'Sample Space Part 2',
-            description: 'sci-fi, comedy',
-            images: [image_dimensions],
-            role: 'Director, Producer, Editor'
-          },
+      {
+        title: 'Sample Space Part 2',
+        description: 'sci-fi, comedy',
+        role: 'Director, Producer, Editor'
+      },
   
 
       // Add more development projects here
@@ -55,7 +53,7 @@ const FilmSection = () => {
       <div className="md:flex md:gap-8">
         {/* Past Projects */}
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-2xl font-bold m-6 bg-white rounded-2xl text-center">Past Projects</h2>
+          <h2 className="text-2xl font-bold m-6 bg-white rounded-2xl text-center w-fit px-6 mx-auto">Past Projects</h2>
           {projects.past.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
@@ -63,7 +61,7 @@ const FilmSection = () => {
 
         {/* Projects in Development */}
         <div className="md:w-1/2">
-        <h2 className="text-2xl font-bold m-6 bg-white rounded-2xl text-center">In Development</h2>
+        <h2 className="text-2xl font-bold m-6 bg-white rounded-2xl text-center w-fit px-6 mx-auto">In Development</h2>
           {projects.development.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
