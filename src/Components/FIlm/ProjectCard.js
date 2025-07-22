@@ -3,7 +3,7 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
 
   return (
     <div
-      className="rounded-2xl bg-white mt-0 p-6 justify-center"
+      className="rounded-2xl mt-0 p-6 justify-center"
       >
       <div className="flex">
         <h3 className="text-xl font-bold mb-2 mr-2">Title:</h3>

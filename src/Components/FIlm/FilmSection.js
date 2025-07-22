@@ -19,7 +19,6 @@ const FilmSection = () => {
         images: [image_ss1, image_ss2],
         youtubeLink: 'https://www.youtube.com/watch?v=1W6RhrcbhFk',
         role: 'Director, Writer, Producer, Editor'
-        
       },
       {
         title: 'Hot Jazz Saturday Night',
@@ -41,37 +40,37 @@ const FilmSection = () => {
         title: 'Sample Space Part 2',
         description: 'sci-fi, comedy',
         role: 'Director, Producer, Editor'
-        },
-    {
+      },
+      {
         title: 'Untitled Short Film',
         description: 'sci-fi, post-apocolyptic',
         role: 'Writer, Director, Producer, Editor'
-        },
-        {
-            title: 'Untitled Short Film',
-            description: 'comedy, action',
-            role: 'Writer, Director, Producer, Editor'
-        },
+      },
+      {
+        title: 'Untitled Short Film',
+        description: 'comedy, action',
+        role: 'Writer, Director, Producer, Editor'
+      },
       // Add more development projects here
     ]
   };
 
   return (
-    <section className="w-full mx-auto py-8 pl-8">
-      <div className="md:flex md:gap-8">
+    <section className="w-full max-w-screen-lg mx-auto py-8 px-2 sm:px-4 md:px-8">
+      <div className="flex flex-col md:flex-row md:gap-8">
         {/* Past Projects */}
-        <div className="md:w-1/2 x-8 bg-white rounded-2xl">
-                  <h2 className="text-2xl font-bold bg-white rounded-2xl text-center w-fit px-6 py-2 mx-auto mb-6">Past Projects</h2>
-                  <div className="border border-red-400 mx-4"></div>
+        <div className="w-full md:w-1/2 mx-0 sm:mx-2 md:mx-4 bg-white rounded-2xl mb-8 md:mb-0">
+          <h2 className="text-2xl font-bold bg-white rounded-2xl text-center w-fit px-6 py-2 mx-auto mb-6">Past Projects</h2>
+          <div className="border border-red-400 mx-2 sm:mx-4"></div>
           {projects.past.map((project, index) => (
-              <ProjectCard key={index} {...project} />
+            <ProjectCard key={index} {...project} />
           ))}
         </div>
 
         {/* Projects in Development */}
-          <div className="md:w-1/2 mx-8 bg-white rounded-2xl">
-                  <h2 className="text-2xl font-bold bg-white rounded-2xl text-center w-fit px-6 py-2 mx-auto mb-6">In Development</h2>
-                  <div className="border border-red-400 mx-4"></div>
+        <div className="w-full md:w-1/2 mx-0 sm:mx-2 md:mx-4 bg-white rounded-2xl">
+          <h2 className="text-2xl font-bold bg-white rounded-2xl text-center w-fit px-6 py-2 mx-auto mb-6">In Development</h2>
+          <div className="border border-red-400 mx-2 sm:mx-4"></div>
           {projects.development.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
