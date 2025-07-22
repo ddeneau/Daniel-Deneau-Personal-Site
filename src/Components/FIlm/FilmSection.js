@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import image_dimensions from '../Home/Images/dimensions.png';
+
 import image_hjsn from '../Home/Images/hjsn.png';
 import image_hjsn2 from '../Home/Images/hjsn2.png';
 import image_ss1 from '../Home/Images/ss1.png';
@@ -35,33 +35,43 @@ const FilmSection = () => {
         title: 'Knights',
         description: 'action, drama, horror',
         images: [image_knights1, image_knights2],
-        role: 'Guest Role'
+        role: 'Tiny acting part'
       },
       {
         title: 'Sample Space Part 2',
         description: 'sci-fi, comedy',
         role: 'Director, Producer, Editor'
-      },
-  
-
+        },
+    {
+        title: 'Untitled Short Film',
+        description: 'sci-fi, post-apocolyptic',
+        role: 'Writer, Director, Producer, Editor'
+        },
+        {
+            title: 'Untitled Short Film',
+            description: 'comedy, action',
+            role: 'Writer, Director, Producer, Editor'
+        },
       // Add more development projects here
     ]
   };
 
   return (
-    <section className="container mx-auto py-8">
+    <section className="w-full mx-auto py-8 pl-8">
       <div className="md:flex md:gap-8">
         {/* Past Projects */}
-        <div className="md:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-2xl font-bold m-6 bg-white rounded-2xl text-center w-fit px-6 mx-auto">Past Projects</h2>
+        <div className="md:w-1/2 x-8 bg-white rounded-2xl">
+                  <h2 className="text-2xl font-bold bg-white rounded-2xl text-center w-fit px-6 py-2 mx-auto mb-6">Past Projects</h2>
+                  <div className="border border-red-400 mx-4"></div>
           {projects.past.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+              <ProjectCard key={index} {...project} />
           ))}
         </div>
 
         {/* Projects in Development */}
-        <div className="md:w-1/2">
-        <h2 className="text-2xl font-bold m-6 bg-white rounded-2xl text-center w-fit px-6 mx-auto">In Development</h2>
+          <div className="md:w-1/2 mx-8 bg-white rounded-2xl">
+                  <h2 className="text-2xl font-bold bg-white rounded-2xl text-center w-fit px-6 py-2 mx-auto mb-6">In Development</h2>
+                  <div className="border border-red-400 mx-4"></div>
           {projects.development.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

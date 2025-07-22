@@ -3,8 +3,8 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
 
   return (
     <div
-      className="rounded-2xl bg-white mt-6 mx-5 p-6 cursor-pointer"
-    >
+      className="rounded-2xl bg-white mt-0 p-6 justify-center"
+      >
       <div className="flex">
         <h3 className="text-xl font-bold mb-2 mr-2">Title:</h3>
         <p className="text-xl text-slate-900 font-medium mb-2">{title}</p>
@@ -16,7 +16,7 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
       </div>
 
       <div className="flex">
-        {images ? (<h3 className="text-xl font-bold mr-2">Images:</h3>) : (<h3></h3>)}
+        {images ? (<h3 className="text-xl font-bold mr-2 mb-1">Images:</h3>) : (<p></p>)}
       </div>
 
       <div className="flex gap-2">
@@ -38,7 +38,8 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
       <div className="flex">
         <h3 className="text-xl font-bold mr-2">Role:</h3>
         <p className="text-xl text-slate-900 font-medium mb-2">{role}</p>
-      </div>
+          </div>
+          <div className="border border-red-400"></div>
     </div>
   );
 };

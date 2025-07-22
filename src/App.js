@@ -19,7 +19,8 @@ function App() {
             <Route path="/" element={<Home></Home>}></Route>
             <Route path="/software" element={<Software></Software>}></Route>
           </Routes>
-        </BrowserRouter>
+          </BrowserRouter>
+          <p className="flex justify-center ">&copy; 2025 Daniel Deneau</p> 
       </div>
   );
 }

@@ -1,4 +1,4 @@
-import Information from "../Components/Home/Information"
+import Information from "../Components/Software/Information"
 
 const Software = () => {
     return(

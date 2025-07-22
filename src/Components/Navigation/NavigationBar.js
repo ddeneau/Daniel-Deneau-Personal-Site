@@ -9,7 +9,7 @@ const NavigationBar = () => {
         <div className="flex justify-center bg-slate-600 my-4 sm:">
             <div className="flex flex-row w-1/3 sm:">
                 <div className="w-1/3 sm:">{NavigationBlock("Software", "/Software", atomIcon)}</div> 
-                <div className="w-1/3 sm:">{NavigationBlock("Main ", "/", houseIcon)}</div>
+                <div className="w-1/3 sm:">{NavigationBlock("Home ", "/", houseIcon)}</div>
                 <div className="w-1/3 sm:">{NavigationBlock("Media", "/Film", movieIcon)}</div>
             </div>
         </div>
