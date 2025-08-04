@@ -7,14 +7,16 @@ import image_ss1 from '../Home/Images/ss1.png';
 import image_ss2 from '../Home/Images/ss2.png';
 import image_knights1 from '../Home/Images/knights1.png';
 import image_knights2 from '../Home/Images/knights2.png';
+import filmPage from './FilmPage'
 
+    ;
 const FilmSection = () => {
   // Dummy data for projects
   const projects = {
     past: [
       {
         title: 'Sample Space',
-        pageURL: '/sample-space',
+        url: {filmPage},
         description: 'comedy, sci-fi, romance, short',
         images: [image_ss1, image_ss2],
         youtubeLink: 'https://www.youtube.com/watch?v=1W6RhrcbhFk',

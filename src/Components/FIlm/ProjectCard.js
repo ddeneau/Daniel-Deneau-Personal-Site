@@ -7,7 +7,8 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
       >
       <div className="flex">
         <h3 className="text-xl font-bold mb-2 mr-2">Title:</h3>
-        <p className="text-xl text-slate-900 font-medium mb-2">{title}</p>
+              {url ? (<a href={url} className="text-xl text-blue-500 underline font-medium mb-2">{title}</a>) :
+           (<p className="text-xl text-slate-900 font-medium mb-2">{title}</p> )}
       </div>
 
       <div className="flex">
