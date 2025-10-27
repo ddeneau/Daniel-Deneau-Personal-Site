@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import FilmPage from './FilmPage';
 
 import image_hjsn from '../Home/Images/hjsn.png';
 import image_hjsn2 from '../Home/Images/hjsn2.png';
@@ -76,7 +77,8 @@ const FilmSection = () => {
           {projects.development.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
-        </div>
+              </div>
+              <a href={FilmPage("", null,"", "description", "credits")}>go to film</a>
       </div>
     </section>
   );
