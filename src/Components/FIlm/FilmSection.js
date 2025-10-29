@@ -78,7 +78,6 @@ const FilmSection = () => {
             <ProjectCard key={index} {...project} />
           ))}
               </div>
-              <a href={FilmPage("", null,"", "description", "credits")}>go to film</a>
       </div>
     </section>
   );
