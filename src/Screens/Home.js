@@ -6,15 +6,16 @@ import Current from "../Components/Home/Current"
 const Home = () => {
     return(
         <div>
-            <div className="flex flex-col lg:flex-row justify-items-center rounded-3xl m-8 bg-gray-600 border-4 border-orange-600">
+            <div className="flex flex-col flex-row justify-center rounded-3xl m-8 bg-gray-600 border-4 border-orange-600">
                 
-                <div className="flex flex-col lg:m-8 sm:m-8 lg:w-1/2 h-fit sm:w-fit sm:justify-center">
+                <div className="flex flex-col h-fit mx-6 justify-items-center">
                     <div className="flex ">{Introduction()}</div>
                     <div className="flex "> {Education()} </div>
+                    <div className="flex md:grid-cols-3 h-fit justify-center">{Current()}</div>
                 </div>
                 
 
-                <div className="flex lg:m-8 sm:m-8 lg:w-1/2 h-fit w-full sm:justify-center">{Current()}</div>
+                
             </div>      
         </div> 
     )
