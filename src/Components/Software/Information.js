@@ -2,6 +2,7 @@ import InformationBlock from "../Software/InformationBlock";
 import vitalizeImage from '../Home/Images/vitalize.png';
 import prgImage from "../Home/Images/prg.png";
 import retensaImage from "../Home/Images/retensa.png";
+import itcon1 from "../Home/Images/itcon.png";
 import InformationTitle from "../Shared/InformationTitle";
 
 const Information = () => {
@@ -9,10 +10,11 @@ const Information = () => {
         <div className="rounded-2xl bg-white mx-6 my-6 mx-auto max-w-8xl px-6 py-8">
             {/* Information title section */ InformationTitle("Past Roles")}
                 <div className="border border-red-400"></div>
-                <div className="grid md:grid-cols-3 gap-6">
-                    {InformationBlock("Retensa", retensaImage, "https://retensa.com/", "My previous experiences primarily involved startups and academic Retensa was a significant step up in terms of scale and complexity. I was initially overwhelmed by the fast-paced environment, but I quickly embraced the challenge and immersed myself in the learning process..", "Active participation in stand-up meetings with product managers and engineers gave me insights into large-scale software projects. Additionally, hands-on involvement in QA testing provided practical experience in safeguarding the quality and integrity of our products. These enriching experiences deepened my appreciation of the systems powering cloud web services.")}
-                    {InformationBlock("Baxter the Chef", prgImage, "https://prg.cs.umd.edu/", "During my Winter Break of 2021, I began working under a Computer Engineering PhD researcher at the University of Maryland. The project was part of the Perception and Robotics Group within the Human-Computer Interaction Lab", "As an AI and robotics simulation developer, I was responsible for development within our Unity3D simulation. One of my main task throughout the process was focused on developing a modified version of an algorithm that subdived 3D graphics models (like the kind you build in Blender or Maya for games or simulations).")}
-                    {InformationBlock("VitalizeCare", vitalizeImage, "https://vitalizecare.co/" ,"I joined this start-up in the early fall of 2020, a few months into the world being comfortable working remotely. It was founded by two premed students who are still growing their company.", "Given the immense strain on the healthcare system, I was deeply motivated to contribute to the development of an app dedicated to enhancing the mental well-being of medical professionals. This project provided me with a unique opportunity to apply my technical skills to address a pressing societal issue.")}
+            <div className="grid md:grid-cols-4 gap-6">
+                    {InformationBlock("Business Analyst - ITCON", itcon1, "https://itcon-inc.com/", "At ITCON I worked on government software development contracting teams. My day-to-day tasks involved watching the help desk closely, and assisiting developers and the project manager with documenting tasks and issues.", "My favorite part was working online with people in different parts of the country all day, every day. It felt a little like traveling and meeting people but I was just on my laptop." )}
+                    {InformationBlock("Business Analyst Intern - Retensa", retensaImage, "https://retensa.com/", "I forget exactly which website I applied for this role on, but I was excited to get an offer for a software company with a few well-known clients.", "I got to learn and practice how to support software development teams using project management software, and got to ask a lot of questions about how a software product worked.")}
+                    {InformationBlock("Simulation Development (C#) Intern - Baxter the Chef", prgImage, "https://prg.cs.umd.edu/", "One time I was browsing the research assistant job boards at my school and started working within the Human-Computer Interaction Lab", "As an AI and robotics simulation developer, I was responsible for development within a Unity3D simulation my boss had set-up, and I basically spent a year or so working on math, physics, and AI problems")}
+                    {InformationBlock("React Native Development Intern - VitalizeCare", vitalizeImage, "https://vitalizecare.co/" ,"I joined this start-up a few months into the world being comfortable working remotely, thinking it would be a great opportunity to practice mobile development on a team.", "It was interesting to contribute to the early development of a product set on impacting the well-being of medical professionals, especially since it is still growing today and gaining users")}
                 </div>
         </div>
     )

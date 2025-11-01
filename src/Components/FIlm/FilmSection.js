@@ -6,9 +6,10 @@ import image_hjsn from '../Home/Images/hjsn.png';
 import image_hjsn2 from '../Home/Images/hjsn2.png';
 import image_ss1 from '../Home/Images/ss1.png';
 import image_ss2 from '../Home/Images/ss2.png';
-import image_knights1 from '../Home/Images/knights1.png';
-import image_knights2 from '../Home/Images/knights2.png';
-import filmPage from './FilmPage'
+import image_knights1 from '../Home/Images/knights.png';
+import image_knights2 from '../Home/Images/knights_2.png';
+import aa_1 from '../Home/Images/aa_1.png'
+import aa_2 from '../Home/Images/aa_2.png'
 
     ;
 const FilmSection = () => {
@@ -17,7 +18,7 @@ const FilmSection = () => {
     past: [
       {
         title: 'Sample Space',
-        url: {filmPage},
+        url: <FilmPage title="title"></FilmPage >,
         description: 'comedy, sci-fi, romance, short',
         images: [image_ss1, image_ss2],
         youtubeLink: 'https://www.youtube.com/watch?v=1W6RhrcbhFk',
@@ -30,29 +31,26 @@ const FilmSection = () => {
         role: 'Writer, Director, Producer, Editor',
         youtubeLink: 'https://filmfreeway.com/projects/2721151',
       },
+      {
+        title: 'Knights',
+        description: 'action, thriller, horror',
+        images: [image_knights1, image_knights2],
+        role: 'Background Actor',
+        youtubeLink: 'https://www.youtube.com/watch?v=pEp7L7PO5D4'
+       },
       // Add more past projects here
     ],
     development: [
       {
-        title: 'Knights',
-        description: 'action, drama, horror',
-        images: [image_knights1, image_knights2],
-        role: 'Tiny acting part'
+        title: 'Asocial Artist',
+        description: 'fictional biography',
+        images: [aa_1, aa_2],
+        role: 'Director, Writer, Editor, Photography'
       },
       {
-        title: 'Sample Space Part 2',
-        description: 'sci-fi, comedy',
-        role: 'Director, Producer, Editor'
-      },
-      {
-        title: 'Untitled Short Film',
-        description: 'sci-fi, post-apocolyptic',
-        role: 'Writer, Director, Producer, Editor'
-      },
-      {
-        title: 'Untitled Short Film',
-        description: 'comedy, action',
-        role: 'Writer, Director, Producer, Editor'
+        title: 'Jack is Haunted',
+        description: 'action, comedy, drama',
+        role: 'Director, Writer'
       },
       // Add more development projects here
     ]

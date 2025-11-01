@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => {
 
   return (
@@ -7,7 +9,7 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
       >
       <div className="flex">
         <h3 className="text-xl font-bold mb-2 mr-2">Title:</h3>
-              {url ? (<a href={url} className="text-xl text-blue-500 underline font-medium mb-2">{title}</a>) :
+              {url ? (<Link to="/sample_space" className="text-xl text-blue-500 underline font-medium mb-2">{title}</Link>) :
            (<p className="text-xl text-slate-900 font-medium mb-2">{title}</p> )}
       </div>
 
@@ -29,7 +31,7 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
       <div className="flex gap-4">
         {youtubeLink ? (
           <a href={youtubeLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-            Watch on YouTube
+            Watch using External Link
           </a>
         ) : (
           <p>Link Coming Soon</p>
