@@ -1,6 +1,6 @@
 import InformationTitle from "../Shared/InformationTitle"
 import ImagelessInformationBlock from "./ImagelessInformationBlock"
-import space_photo from "../../Components/Home/Images/space_game.png"
+import space_photo from "../../Components/Home/Images/offworld_2.png"
 import job_photo from "../../Components/Home/Images/job_board.png"
 import movie_photo from "../../Components/Home/Images/aa_photo.png"
 
