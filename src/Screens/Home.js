@@ -10,7 +10,7 @@ const Home = () => {
                 
                 <div className="flex flex-col h-fit mx-6 justify-items-center">
                     <div className="flex ">{Introduction()}</div>
-                    <div className="flex "> {Education()} </div>
+         
                     <div className="flex md:grid-cols-3 h-fit justify-center">{Current()}</div>
                 </div>
                 
