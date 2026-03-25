@@ -3,7 +3,7 @@ import vitalizeImage from '../Home/Images/vitalize.png';
 import prgImage from "../Home/Images/prg.png";
 import retensaImage from "../Home/Images/retensa.png";
 import itcon1 from "../Home/Images/itcon.png";
-import InformationTitle from "../Shared/InformationTitle";
+import InformationTitle from "../InformationTitle";
 
 const Information = () => {
     return (

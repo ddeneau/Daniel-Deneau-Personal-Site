@@ -1,4 +1,4 @@
-import InformationTitle from "../Shared/InformationTitle"
+import InformationTitle from "../InformationTitle"
 import ImagelessInformationBlock from "./ImagelessInformationBlock"
 import space_photo from "../../Components/Home/Images/offworld_2.png"
 import job_photo from "../../Components/Home/Images/job_board.png"

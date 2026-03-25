@@ -15,7 +15,14 @@ import aa_2 from '../Home/Images/aa_2.png'
 const FilmSection = () => {
   // Dummy data for projects
   const projects = {
-    past: [
+      past: [
+      {
+        title: 'Asocial Artist',
+        description: 'fictional biography',
+        images: [aa_1, aa_2],
+        youtubeLink:'https://filmfreeway.com/projects/4207595',
+        role: 'Director, Writer, Editor, Photography'
+      },
       {
         title: 'Sample Space',
         url: <FilmPage title="title"></FilmPage >,
@@ -37,15 +44,14 @@ const FilmSection = () => {
         images: [image_knights1, image_knights2],
         role: 'Background Actor',
         youtubeLink: 'https://www.youtube.com/watch?v=pEp7L7PO5D4'
-       },
+          },
       // Add more past projects here
     ],
     development: [
       {
-        title: 'Asocial Artist',
-        description: 'fictional biography',
-        images: [aa_1, aa_2],
-        role: 'Director, Writer, Editor, Photography'
+        title: 'Hunch',
+        description: 'A pilot for a T.V. that a group of actors and I are developing',
+        role: 'Writer'
       },
       {
         title: 'Jack is Haunted',
