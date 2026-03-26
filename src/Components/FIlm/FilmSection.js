@@ -28,7 +28,7 @@ const FilmSection = () => {
       {
         title: 'Sample Space',
         url: <FilmPage title="title"></FilmPage >,
-        description: 'Sort of like a concept opening scene for a longer idea about a group of bartenders that get involved in a multidimensional love-triangle',
+        description: 'A concept opening scene for a longer idea about a group of bartenders that get involved in a multidimensional love-triangle',
         images: [image_ss1, image_ss2],
         youtubeLink: 'https://www.youtube.com/watch?v=1W6RhrcbhFk',
         role: 'Director, Writer, Producer, Editor'
@@ -51,7 +51,7 @@ const FilmSection = () => {
         },
         {
             title: 'Hunch',
-            description: 'A pilot for a T.V. that a group of actors and I are developing',
+            description: 'A pilot for a t.v. series-style project that a group of actors and I are developing',
             role: 'Writer'
         },
       // Add more development projects here
