@@ -14,7 +14,7 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
       </div>
 
       <div className="flex">
-        <h3 className="text-xl font-bold mr-2">Tags:</h3>
+        
         <p className="text-xl text-slate-900 font-medium mb-2">{description}</p>
       </div>
 

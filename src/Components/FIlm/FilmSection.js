@@ -2,14 +2,16 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import FilmPage from './FilmPage';
 
-import image_hjsn from '../Home/Images/hjsn.png';
-import image_hjsn2 from '../Home/Images/hjsn2.png';
-import image_ss1 from '../Home/Images/ss1.png';
-import image_ss2 from '../Home/Images/ss2.png';
-import image_knights1 from '../Home/Images/knights.png';
-import image_knights2 from '../Home/Images/knights_2.png';
-import aa_1 from '../Home/Images/aa_1.png'
-import aa_2 from '../Home/Images/aa_2.png'
+import image_hjsn from '../Images/hjsn.png';
+import image_hjsn2 from '../Images/hjsn2.png';
+import image_ss1 from '../Images/ss1.png';
+import image_ss2 from '../Images/ss2.png';
+import image_knights1 from '../Images/knights.png';
+import image_knights2 from '../Images/knights_2.png';
+import aa_1 from '../Images/aa_1.png'
+import aa_2 from '../Images/aa_2.png'
+import joh1 from '../Images/JoH1.png'
+import joh2 from '../Images/Joh2.png'
 
     ;
 const FilmSection = () => {
@@ -26,38 +28,32 @@ const FilmSection = () => {
       {
         title: 'Sample Space',
         url: <FilmPage title="title"></FilmPage >,
-        description: 'comedy, sci-fi, romance, short',
+        description: 'Sort of like a concept opening scene for a longer idea about a group of bartenders that get involved in a multidimensional love-triangle',
         images: [image_ss1, image_ss2],
         youtubeLink: 'https://www.youtube.com/watch?v=1W6RhrcbhFk',
         role: 'Director, Writer, Producer, Editor'
       },
       {
         title: 'Hot Jazz Saturday Night',
-        description: 'documentary, music, art, short',
+        description: 'A short documentary about a radio host for a jazz music and history show.',
         images: [image_hjsn, image_hjsn2],
         role: 'Writer, Director, Producer, Editor',
         youtubeLink: 'https://filmfreeway.com/projects/2721151',
       },
-      {
-        title: 'Knights',
-        description: 'action, thriller, horror',
-        images: [image_knights1, image_knights2],
-        role: 'Background Actor',
-        youtubeLink: 'https://www.youtube.com/watch?v=pEp7L7PO5D4'
-          },
       // Add more past projects here
     ],
     development: [
       {
-        title: 'Hunch',
-        description: 'A pilot for a T.V. that a group of actors and I are developing',
-        role: 'Writer'
-      },
-      {
         title: 'Jack is Haunted',
-        description: 'action, comedy, drama',
-        role: 'Director, Writer'
-      },
+        description: 'A short film about a decoration salesman who thinks he is possessed, one of his customers, and a group of burgalars',
+        role: 'Director, Writer, Editor',
+        images: [joh1, joh2]
+        },
+        {
+            title: 'Hunch',
+            description: 'A pilot for a T.V. that a group of actors and I are developing',
+            role: 'Writer'
+        },
       // Add more development projects here
     ]
   };

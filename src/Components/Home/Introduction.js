@@ -1,4 +1,4 @@
-import photo from './Images/headshot.png';
+import photo from '../Images/headshot.png';
 
 const Introduction = () => {
     return (

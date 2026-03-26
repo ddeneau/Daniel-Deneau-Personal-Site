@@ -1,8 +1,8 @@
 import InformationTitle from "../InformationTitle"
 import ImagelessInformationBlock from "./ImagelessInformationBlock"
-import space_photo from "../../Components/Home/Images/offworld_2.png"
-import job_photo from "../../Components/Home/Images/job_board.png"
-import movie_photo from "../../Components/Home/Images/aa_photo.png"
+import space_photo from "../../Components/Images/offworld_2.png"
+import job_photo from "../../Components/Images/job_board.png"
+import movie_photo from "../../Components/Images/aa_photo.png"
 
 const Current = () => {
     return(

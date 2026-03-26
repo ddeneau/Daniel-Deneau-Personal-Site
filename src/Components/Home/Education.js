@@ -1,4 +1,4 @@
-import photo from './Images/logo.png'
+import photo from '../Images/logo.png'
 
 const Education = () => {
     return (
