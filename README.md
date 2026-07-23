@@ -1,1 +1,2 @@
-# Every Software Developer should have a website, right?
+# Personal Website
+Developed using JavaScript, React, and AWS.
