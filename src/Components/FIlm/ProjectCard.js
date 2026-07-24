@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => {
+const ProjectCard = ({ title, description, images, youtubeLink, role, url}) => {
 
   return (
     <div
@@ -9,7 +9,7 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
       >
       <div className="flex">
         <h3 className="text-xl font-bold mb-2 mr-2">Title:</h3>
-              {url ? (<Link to="/sample_space" className="text-xl text-blue-500 underline font-medium mb-2">{title}</Link>) :
+              {url ? (<Link to={url} className="text-xl text-blue-500 underline font-medium mb-2">{title}</Link>) :
            (<p className="text-xl text-slate-900 font-medium mb-2">{title}</p> )}
       </div>
 
@@ -38,11 +38,11 @@ const ProjectCard = ({ title, description, images, youtubeLink, role, url }) => 
         )}
       </div>
       
-      <div className="flex">
+  {/*    <div className="flex">
         <h3 className="text-xl font-bold mr-2">Role:</h3>
         <p className="text-xl text-slate-900 font-medium mb-2">{role}</p>
           </div>
-          <div className="border border-red-400"></div>
+          <div className="border border-red-400"></div>*/}
     </div>
   );
 };
