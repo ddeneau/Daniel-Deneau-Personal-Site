@@ -22,7 +22,7 @@ const Introduction = () => {
                 <a href="https://linkedin.com/in/ddeneau" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     LinkedIn
                 </a>
-                <a href="daniel.a.deneau@gmail.com" aria-label="Email">
+                <a href="mailto:daniel.a.deneau@gmail.com" aria-label="Email">
                     Email
                 </a>
                 

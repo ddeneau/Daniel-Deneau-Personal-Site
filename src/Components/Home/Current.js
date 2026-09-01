@@ -2,7 +2,7 @@ import InformationTitle from "../InformationTitle"
 import ImagelessInformationBlock from "./ImagelessInformationBlock"
 import space_photo from "../../Components/Images/offworld_2.png"
 import job_photo from "../../Components/Images/job_board.png"
-import movie_photo from "../../Components/Images/poster2.png"
+import movie_photo from "../../Components/Images/banner.png"
 
 const Current = () => {
     return(
